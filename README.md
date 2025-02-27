@@ -1,6 +1,10 @@
-# **ESTOQUE MAIS**
+# **ENIGMA OF FEAR**
 > A website project to advertise a game
 > note: the commits were made before the new desiner update "26/06/2024"
+
+## **SEE THE PROJECT**
+
+to see the project, just click on this link: https://lucasfcbastos.github.io/Enigma-of-Fear/
 
 ## **SCREENS**
 
