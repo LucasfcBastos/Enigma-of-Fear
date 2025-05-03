@@ -1,6 +1,6 @@
 main {
-    margin-top: -5px;
-    background-color: #00132F;
+    margin-top: -0.3em;
+    background-color: var(--back1);
 }
 
 main .part01 {
@@ -15,12 +15,7 @@ main .part01 .video {
     margin-right: 1vw;
 }
 
-main .part01 video {
-    margin-top: 3px;
-    width: 46.9vw;
-    height: 26.4vw;
-    border-radius: 1.7vw;
-}
+
 
 main .part01 .text {
     align-content: center;
@@ -31,13 +26,13 @@ main .part01 .text {
 }
 
 main .part01 p {
-    font-size: 3vw;
+    font-size: 2.3vw;
     text-align: justify;
     font-weight: bold;
 }
 
 main .part02 {
-    background-color: #012641;
+    background-color: var(--back2);
     display: flex;
     gap: 2vw;
     justify-content: center;
@@ -46,13 +41,14 @@ main .part02 {
 main .part02 .first,
 main .part02 .second,
 main .part02 .third{
-    background-color: #00132F;
+    background-color: var(--back1);
     width: 30.5vw;
 }
 
 main .part02 h1 {
     text-align: center;
     font-size: 3vw;
+    margin: 0.5em;
 }
 
 main .part02 img {
@@ -63,10 +59,10 @@ main .part02 img {
 
 main .part02 p {
     margin-left: 0.7vw;
-    width: 95%;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     text-align: justify;
     font-weight: bold;
+    margin: 1.3em;
 }
 
 @media (max-width: 685px) {
