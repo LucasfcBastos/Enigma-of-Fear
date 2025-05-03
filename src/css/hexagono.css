@@ -10,9 +10,16 @@
 .id .hexa {
     position: absolute;
     background: #01020B;
-    border: 0.6vw solid #113D48;
+    border: 0.6vw solid var(--color_second);
     height: 4.4vw;
     width: 4.4vw;
+}
+
+.id .hexa.right {
+    top: 0.7vw;
+    right: 24.8vw;
+    transform: rotate(45deg);
+    border-radius: 0.6vw 0vw 0.6vw 0vw;
 }
 
 .id .hexa.left {
@@ -25,15 +32,15 @@
 .id .hexa.right {
     top: 0.7vw;
     right: 24.8vw;
-    transform: rotate(45.2deg);
+    transform: rotate(45deg);
     border-radius: 0.6vw 0vw 0.6vw 0vw;
 }
 
 .id .hexagono {
     position: relative;
     background: #01020B;
-    border-bottom: 0.6vw solid #113D48;
-    border-top: 0.6vw solid #113D48;
+    border-top: 0.6vw solid var(--color_second);
+    border-bottom: 0.6vw solid var(--color_second);
     height: 5.7vw;
     align-content: center;
     margin-left: 27vw;
@@ -42,43 +49,7 @@
 
 .id p {
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 2.9vw;
     font-weight: bold;
-    text-shadow: 0px 0px 1vw #00FFFF;
-}
-
-@media (max-width: 685px) {
-    .id {
-        height: 15vw;
-    }
-
-    .id .hexa {
-        border: 1.3vw solid #113D48;
-        height: 7.5vw;
-        width: 7.5vw;
-    }
-
-    .id .hexa.left {
-        top: 1.3vw;
-        left: 13.2vw;
-        border-radius: 0.8vw 0vw 0.8vw 0vw;
-    }
-    
-    .id .hexa.right {
-        top: 1.3vw;
-        right: 13.2vw;
-        border-radius: 0.8vw 0vw 0.8vw 0vw;
-    }
-
-    .id .hexagono {
-        border-bottom: 1.5vw solid #113D48;
-        border-top: 1.5vw solid #113D48;
-        height: 10.2vw;
-        margin-left: 17vw;
-        margin-right: 17vw;
-    }
-
-    .id p {
-        font-size: 6vw;
-    }
+    text-shadow: 0em 0em 2vw var(--color_second);
 }

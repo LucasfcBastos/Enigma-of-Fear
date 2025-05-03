@@ -1,8 +1,22 @@
+@font-face {
+    font-family: "Inria_Sans"; src: url('../font/InriaSans-Bold.ttf');
+}
+
+:root {
+	--back1: #00132F;
+	--back2: #012641;
+	--back3: #000000;
+	--back4: #101218;
+	--back5: #252629;
+	--color_primary: #ffffff;
+	--color_second: #078B00;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Alumni Sans', sans-serif;
+	font-family: 'Inria_Sans';
     color: rgb(255, 255, 255);
 }
 
