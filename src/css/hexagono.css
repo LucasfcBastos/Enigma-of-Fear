@@ -9,7 +9,7 @@
 
 .id .hexa {
     position: absolute;
-    background: #01020B;
+    background: var(--coolor_hexa);
     border: 0.6vw solid var(--color_second);
     height: 4.4vw;
     width: 4.4vw;
@@ -51,5 +51,5 @@
     text-align: center;
     font-size: 2.9vw;
     font-weight: bold;
-    text-shadow: 0em 0em 2vw var(--color_second);
+    text-shadow: 0em 0em 2vw var(--color_primary);
 }

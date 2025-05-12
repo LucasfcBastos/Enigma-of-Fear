@@ -8,8 +8,10 @@
 	--back3: #000000;
 	--back4: #101218;
 	--back5: #252629;
-	--color_primary: #ffffff;
+	--color_text: #ffffff;
+	--color_primary: #0BDE00;
 	--color_second: #078B00;
+	--coolor_hexa: #01020B;
 }
 
 * {
@@ -17,7 +19,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Inria_Sans';
-    color: rgb(255, 255, 255);
+    color: var(--color_text);
     text-align: justify;
 }
 
