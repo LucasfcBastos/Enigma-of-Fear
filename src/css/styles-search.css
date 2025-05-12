@@ -1,80 +1,87 @@
 div.ink {
+    background-image: url('../img/ink.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    transform: scaleX(-1);
     width: 100%;
-    content: url('/src/img/ink1.png');
+    height: 3.6em;
 }
 
 div.ink.top{
-    background-color: #012641;
+    background-color: var(--back2);
 }
 
 div.ink.bottom {
     transform: rotate(180deg);
-    background-color: #101218;
+    background-color: var(--back4);
 }
 
 search {
-    background-color: black;
+    background-color: var(--back3);
+}
+
+search .part01 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5vw;
 }
 
 search .part01 p{
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-size: 3.2vw;
-    text-align: justify;
+    margin: 0vw 2vw;
+    font-size: 1.6vw;
     font-weight: bold;
 }
 
 search .part01 .icons {
-    margin-top: 2vw;
-    margin-bottom: 4vw;
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    gap: 3vw;
+    margin: 2em;
 }
 
-search .part01 img {
-    width: 10.5vw;
+search .part01 .icons .circle {
+    background-color: #fff;
+    display: grid;
+    border-radius: 100em;
+    width: 7.5vw;
+    height: 7.5vw;
+    align-content: center;
+    justify-content: center;
 }
 
-search h1 {
-    background-color: #101218;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    text-align: center;
-    font-size: 4vw;
+search .part01 .icons .circle img {
+    width: 5.5vw;
 }
 
 search table,
 search th,
 search td {
     border-collapse: collapse;
-    border: 1.5vw solid black;
+    border: 1vw solid #101218;
     font-size: 2vw;
 }
 
-search td{
-    text-align: left;
+search table.ta1 {
+    width: calc(200% - 2em);
+    margin: 0px 1em 0px 1em;
 }
 
-search tr.color1 {
-    background-color: #101218;
+search table.ta1 th,
+search table.ta2 th {
+    text-align: center;
+    font-size: 1.5vw;
+    height: 3.5vw;
 }
 
-search tr.color2 {
+search table.ta2 {
+    width: calc(100% - 2em);
+    margin: 0px 1em 0px 1em;
+}
+
+search tr {
     background-color: #252629;
 }
 
-search th.type {
-    border-left: 2vw solid black;
-    width: 30vw;
-    text-indent: 2vw;
-    text-align: left;
-}
-
-search th.description {
-    border-right: 2vw solid black;
-    width: 67vw;
-}
 
 @media (max-width: 685px) {
     div.ink {
