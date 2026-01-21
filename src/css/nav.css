@@ -1,0 +1,53 @@
+nav {
+    background-color: var(--ColorNav);
+    color: var(--ColorText);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    position: fixed;
+    width: calc(100% - 1em);
+    z-index: 1000;
+}
+
+nav .head {
+    display: flex;
+    align-items: center;
+}
+
+nav .head img#logo {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+nav .head img#logotext {
+    height: 1em;
+    margin-left: 1em;
+}
+
+nav .head hr {
+    height: 2.5em;
+    border: 1px solid var(--ColorText);
+}
+
+nav .ref {
+    display: flex;
+    gap: 1em;
+}
+
+nav .ref a {
+    color: var(--ColorText);
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav .head img#logotext,
+    nav .head hr,
+    nav .ref {
+        display: none;
+    }
+}

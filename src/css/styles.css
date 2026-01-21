@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Inria_Sans"; src: url('../font/InriaSans-Bold.ttf');
+}
+
+:root {
+    --ColorNav: #0D0D0D;
+    --ColorText: #FFFFFF;
+}
+
+body {
+    margin: 0px;
+    font-family: "Inria_Sans";
+}
