@@ -1,0 +1,15 @@
+#about {
+    margin-top: -0.25em;
+    background-color: var(--ColorBlueLight);
+}
+
+#about .part01 {
+    display: flex;
+    gap: 1.5em;
+    padding: 0em 1.5em;
+}
+
+#about .part01 iframe {
+    height: 21.5em;
+    width: 38.2em;
+}

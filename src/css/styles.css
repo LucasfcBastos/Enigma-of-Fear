@@ -7,9 +7,25 @@
     --ColorText: #FFFFFF;
     --ColorPrimary: #00ff00;
     --ColorBlueLight: #012641;
+
+    
+    --TextNormal: 1.35em;
+    --TextTitle: 2em;
 }
 
 body {
     margin: 0px;
     font-family: "Inria_Sans";
+    color: var(--ColorText);
+}
+
+p {
+    font-size: var(--TextNormal);
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
 }

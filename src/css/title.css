@@ -3,6 +3,7 @@
 }
 
 .title .container {
+    margin: 1.5em 0em;
     position: relative;
 }
 
@@ -34,11 +35,4 @@
     align-content: center;
     margin-left: 30vw;
     margin-right: 30vw;
-}
-
-.title h1 {
-    margin: 0;
-    text-align: center;
-    color: var(--ColorText);
-    font-size: 2em;
 }
