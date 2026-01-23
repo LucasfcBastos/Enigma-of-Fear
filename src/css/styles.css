@@ -5,6 +5,8 @@
 :root {
     --ColorNav: #0D0D0D;
     --ColorText: #FFFFFF;
+    --ColorPrimary: #00ff00;
+    --ColorBlueLight: #012641;
 }
 
 body {
