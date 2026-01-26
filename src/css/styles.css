@@ -45,6 +45,10 @@ h2 {
     font-size: var(--TextTitle);
 }
 
+h1 {
+    text-shadow: 0em 0em 2vw var(--ColorPrimary);
+}
+
 a {
     color: var(--ColorText);
     text-decoration: none;
