@@ -9,9 +9,10 @@
     --ColorText: #FFFFFF;
     --ColorPrimary: #00ff00;
     --ColorBlueLight: #012641;
+    --ColorBlueDark: #00132F;
 
     
-    --TextNormal: 1.46em;
+    --TextNormal: 1em;
     --TextTitle: 2em;
 }
 
@@ -37,7 +38,8 @@ p {
     text-align: justify;
 }
 
-h1 {
+h1,
+h2 {
     margin: 0;
     text-align: center;
     font-size: var(--TextTitle);
