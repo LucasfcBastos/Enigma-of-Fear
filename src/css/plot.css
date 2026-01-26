@@ -1,0 +1,69 @@
+/* section default settings */
+#plot {
+    margin-top: -0.25em;
+    background-color: var(--ColorBlueDark);
+}
+
+/* display patterns */
+#plot .group {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0em 2em;
+}
+
+#plot .group .card {
+    display: flex;
+    gap: 2em;
+}
+
+#plot .group .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+/* /* display patterns */
+#plot img {
+    width: 45%;
+    transition: content 0.2s ease;
+}
+
+#plot img#cult {
+    content: url("../img/stories/Strach_v1.png");
+}
+
+#plot img#elite {
+    content: url("../img/stories/Elite_v1.png");
+}
+
+#plot img#cult:hover {
+    content: url("../img/stories/Strach_v2.png");
+}
+
+#plot img#elite:hover {
+    content: url("../img/stories/Elite_v2.png");
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    #plot {
+        margin-top: -0.25em;
+        background-color: var(--ColorBlueLight);
+    }
+    
+    #plot img {
+        display: none;
+    }
+
+    #plot .group {
+        gap: 1em;
+        padding: 0em 1em;
+    }
+
+    #plot .group .card,
+    #plot .group .card .text {
+        gap: 1em;
+    }
+}
