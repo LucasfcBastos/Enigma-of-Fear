@@ -18,6 +18,27 @@
     height: 28vw;
 }
 
+/* part02 settings */
+#about .part02 {
+    display: flex;
+    gap: 2em;
+    padding: 0em 2em;
+    background-color: var(--ColorBlueDark);
+}
+
+#about .part02 .card {
+    width: calc((100vw - 4em)/3);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ColorBlueLight);
+    padding: 0em 1em 1em 1em;
+    gap: 0.5em;
+}
+
+#about .part02 .card img {
+    width: 100%;
+}
+
 /* styles responsiveness */
 @media (max-width: 650px) {
     #about .part01 {
@@ -29,6 +50,21 @@
 
     #about .part01 iframe {
         height: 50vw;
-        width: calc(100vw - 3em);
+        width: calc(100vw - 2em);
+    }
+
+    /* part02 settings */
+    #about .part02 {
+        flex-direction: column;
+        padding: 0.5em 0em 0em 0em;
+        gap: 0em;
+        background-color: var(--ColorBlueLight);
+    }
+
+    #about .part02 .card {
+        padding: 0em 1.1em;
+        width: calc(100% - 2em);
+        padding: 1em;
+        gap: 1em;
     }
 }

@@ -56,4 +56,8 @@ a {
         --TextNormal: 1.25em;
         --TextTitle: 1.75em;
     }
+
+    section {
+        scroll-margin-top: 6.75em;
+    }
 }
