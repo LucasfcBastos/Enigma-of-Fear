@@ -1,7 +1,9 @@
+/* source reference */
 @font-face {
     font-family: "Inria_Sans"; src: url('../font/InriaSans-Bold.ttf');
 }
 
+/* variables */
 :root {
     --ColorNav: #0D0D0D;
     --ColorText: #FFFFFF;
@@ -9,8 +11,13 @@
     --ColorBlueLight: #012641;
 
     
-    --TextNormal: 1.35em;
+    --TextNormal: 1.46em;
     --TextTitle: 2em;
+}
+
+/* default settings */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +26,13 @@ body {
     color: var(--ColorText);
 }
 
+/* specific configurations */
+section {
+    scroll-margin-top: 4.75em;
+}
+
 p {
+    margin: 0;
     font-size: var(--TextNormal);
     text-align: justify;
 }
@@ -27,5 +40,18 @@ p {
 h1 {
     margin: 0;
     text-align: center;
-    font-size: 2em;
+    font-size: var(--TextTitle);
+}
+
+a {
+    color: var(--ColorText);
+    text-decoration: none;
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    :root {
+        --TextNormal: 1.25em;
+        --TextTitle: 1.75em;
+    }
 }

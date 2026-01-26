@@ -1,15 +1,34 @@
+/* section default settings */
 #about {
     margin-top: -0.25em;
     background-color: var(--ColorBlueLight);
 }
 
+/* part01 settings */
 #about .part01 {
     display: flex;
     gap: 1.5em;
     padding: 0em 1.5em;
+    align-items: center;
 }
 
 #about .part01 iframe {
-    height: 21.5em;
-    width: 38.2em;
+    position: sticky;
+    width: calc((100vw - 2em)/2);
+    height: 28vw;
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    #about .part01 {
+        display: flex;
+        flex-direction: column;
+        padding: 0em 1.1em;
+        gap: 0em;
+    }
+
+    #about .part01 iframe {
+        height: 50vw;
+        width: calc(100vw - 3em);
+    }
 }

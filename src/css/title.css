@@ -1,3 +1,4 @@
+/* default hexagon configuration */
 .title {
     align-content: center;
 }
@@ -7,32 +8,43 @@
     position: relative;
 }
 
+/* the corners of the hexagon */
 .title .hexa {
     position: absolute;
     background-color: var(--ColorNav);
     border: 0.4vw solid var(--ColorPrimary);
-    height: 3.5vw;
-    width: 3.55vw;
-    top: 0.65vw;
+    height: 3.1vw;
+    width: 3.1vw;
+    top: 0.5vw;
     border-radius: 0.6vw 0vw 0.6vw 0vw;
     transform: rotate(45deg);
 }
 
 .title .hexa.left {
-    left: 27.75vw;
+    left: 28vw;
 }
 
 .title .hexa.right {
-    right: 27.75vw;
+    right: 28vw;
 }
 
+/* the middle of the hexagon */
 .title .hexagono {
     background-color: var(--ColorNav);
     position: relative;
     border-top: 0.4vw solid var(--ColorPrimary);
     border-bottom: 0.4vw solid var(--ColorPrimary);
-    padding: 0.75em;
-    align-content: center;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    padding: 0.5em;
+    margin: 0vw 30vw;
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    .title .hexa {
+        display: none;
+    }
+
+    .title .hexagono {
+        margin: 0vw;
+    }    
 }

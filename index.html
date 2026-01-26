@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="src/css/intro.css" />
     <link rel="stylesheet" href="src/css/title.css" />
     <link rel="stylesheet" href="src/css/about.css" />
+    <!-- link to JS files -->
+    <script src="src/js/aside.js" defer></script>
 </head>
 <body>
     <!-- navigation section at the top -->
@@ -22,14 +24,34 @@
         </div>
         <!-- the texts for navigation -->
         <div class="ref">
-            <a href="index.html">INTRO</a>
-            <a href="about.html">ABOUT</a>
-            <a href="stories.html">PLOT</a>
-            <a href="contact.html">PLATFORM</a>
-            <a href="contact.html">BUY</a>
-            <a href="contact.html">INFO</a>
+            <a href="#intro">INTRO</a>
+            <a href="#about">ABOUT</a>
+            <a href="#stories">PLOT</a>
+            <a href="#contact">PLATFORM</a>
+            <a href="#contact">BUY</a>
+            <a href="#contact">INFO</a>
         </div>
     </nav>
+    <aside>
+        <div class="btn" id="menuOpen">
+            <button>
+                <img src="src/img/icons/icon_menu.png" />
+            </button>
+        </div>
+        <div class="camp hidden">
+            <a href="#intro">INTRO</a>
+            <a href="#about">ABOUT</a>
+            <a href="#stories">PLOT</a>
+            <a href="#contact">PLATFORM</a>
+            <a href="#contact">BUY</a>
+            <a href="#contact">INFO</a>
+            <div class="btn" id="menuClose">
+                <button>
+                    <img src="src/img/icons/icon_back.png" />
+                </button>
+            </div>
+        </div>
+    </aside>
     <!-- intro id section of the start image -->
     <div id="intro">
         <img src="src/img/intro/home_img.png" />

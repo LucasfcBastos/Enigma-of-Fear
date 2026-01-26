@@ -1,3 +1,4 @@
+/* styles navegation */
 nav {
     background-color: var(--ColorNav);
     color: var(--ColorText);
@@ -10,6 +11,7 @@ nav {
     z-index: 1000;
 }
 
+/* styles navegation camp left */
 nav .head {
     display: flex;
     align-items: center;
@@ -30,6 +32,7 @@ nav .head hr {
     border: 1px solid var(--ColorText);
 }
 
+/* styles navegation camp right */
 nav .ref {
     display: flex;
     gap: 1em;
@@ -40,14 +43,76 @@ nav .ref a {
     text-decoration: none;
 }
 
-@media (max-width: 640px) {
+/* styles aside */
+aside {
+    display: none;
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    /* navegation bar */
     nav {
         justify-content: center;
+        padding: 1em;
     }
 
+    nav .head img#logo {
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    /* navegation camp */
     nav .head img#logotext,
     nav .head hr,
     nav .ref {
         display: none;
     }
+
+    /* styles aside */
+    aside {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    /* styles aside button */
+    aside .btn button {
+        position: fixed;
+        right: 1.5em;
+        bottom: 1.5em;
+        padding: 0em;
+        cursor: pointer;
+        border-radius: 100%;
+        border: 0em;
+    }
+
+    aside .camp .btn button {
+        position: absolute;
+        left: 1.5em;
+        bottom: 1.5em;
+        width: 5.5em;
+    }
+
+    aside .btn img {
+        width: 5.5em;
+    }
+
+    /* styles aside menu */
+    aside .camp {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 6.5em;
+        width: 15em;
+        right: 0em;
+        padding: 1em;
+        height: calc(100% - 8.5em);
+        gap: 1em;
+        background-color: var(--ColorNav);
+    }
+
+    aside .hidden {
+        display: none;
+    }
+
 }
