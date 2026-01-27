@@ -1,3 +1,33 @@
 #platform {
     background-color: var(--ColorBlack);
 }
+
+/* first field with information */
+#platform .part01 {
+    padding: 0em 2em 2em 2em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+/* text and icons */
+#platform .part01 .group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#platform .part01 .group p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+#platform .part01 .group div {
+    justify-content: center;
+    display: flex;
+    gap: 1em;
+}
+
+#platform .part01 .group img {
+    width: 4.25em;
+}
