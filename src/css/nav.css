@@ -57,8 +57,8 @@ aside {
     }
 
     nav .head img#logo {
-        width: 4.5em;
-        height: 4.5em;
+        width: 3.5em;
+        height: 3.5em;
     }
 
     /* navegation camp */
@@ -102,11 +102,11 @@ aside {
         position: fixed;
         display: flex;
         flex-direction: column;
-        top: 6.5em;
+        top: 5.5em;
         width: 15em;
         right: 0em;
         padding: 1em;
-        height: calc(100% - 8.5em);
+        height: calc(100% - 7.5em);
         gap: 1em;
         background-color: var(--ColorNav);
     }
