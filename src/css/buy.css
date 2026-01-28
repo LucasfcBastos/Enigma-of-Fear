@@ -1,0 +1,11 @@
+/* section default settings */
+#buy {
+    background-color: var(--ColorGrayDark);
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    #buy {
+        background-color: var(--ColorGrayLight);
+    }
+}

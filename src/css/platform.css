@@ -73,4 +73,8 @@
     #platform .part01 .table01 {
         width: 100%;
     }
+
+    #platform table {
+        border-spacing: 0.5em;
+    }
 }
