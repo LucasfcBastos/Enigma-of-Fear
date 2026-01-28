@@ -3,9 +3,66 @@
     background-color: var(--ColorGrayDark);
 }
 
+/* part 01 for game purchase options style */
+#buy .part01 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0em 1em 1em 1em;
+}
+
+#buy .part01 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#buy .part01 .card img {
+    width: 16em;
+    margin: 0em 2em;
+}
+
+/* button for buy */
+#buy button {
+    font-family: "Inria_Sans";
+    font-size: var(--TextNormal);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: var(--ColorText);
+    padding: 0.5em;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--ColorPrimaryDark);
+    cursor: pointer;
+}
+
+#buy button:hover {
+    background-color: var(--ColorPrimary);
+    box-shadow: 0 0 1.5em var(--ColorPrimary);
+}
+
+#buy button img#icon {
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0em;
+}
+
 /* styles responsiveness */
 @media (max-width: 650px) {
     #buy {
         background-color: var(--ColorGrayLight);
+    }
+
+    #buy .part01 {
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 0em 0.5em 1.5em 0.5em;
+    }
+
+    #buy button {
+        width: 85%;
     }
 }
