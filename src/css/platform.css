@@ -33,18 +33,24 @@
     width: 4.25em;
 }
 
-/* table 01 */
-#platform .part01 .table01 {
-    width: calc(100% / 2);
-    background-color: var(--ColorGrayDark);
+/* styles for table */
+
+
+#platform .part02 {
+    padding: 0em 2em 2em 2em;
 }
 
-#platform .part01 .table01 table {
+#platform .part01 .table01 {
+    width: calc(100% / 2);
+}
+
+#platform table {
     width: 100%;
+    background-color: var(--ColorGrayDark);
     border-spacing: 1em;
 }
 
-#platform .part01 .table01 table tr {
+#platform table tr {
     background-color: var(--ColorGrayLight);
     text-align: center;
     height: 2em;
@@ -53,7 +59,8 @@
 /* styles responsiveness */
 @media (max-width: 650px) {
     
-    #platform .part01 {
+    #platform .part01,
+    #platform .part02 {
         padding: 0em 1em 1em 1em;
     }
 
