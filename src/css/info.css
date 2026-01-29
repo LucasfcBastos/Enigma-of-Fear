@@ -3,14 +3,14 @@
     background-color: var(--ColorGrayLight);
 }
 
-/* section default settings */
+/* the field with the cards */
 #info .camp {
     display: flex;
     padding: 0em 1em 3em 1em;
     justify-content: space-evenly;
 }
 
-/* section default settings */
+/* card styling */
 #info .camp .card {
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
     width: 25em;
 }
 
-/* section default settings */
+/* button styling */
 #info .camp .card .icons {
     display: flex;
     gap: 1.5em;
@@ -37,4 +37,16 @@
 
 #info .camp button img {
     width: 5em;
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    #info .camp {
+        flex-direction: column;
+        padding: 0em 0.5em 1.5em 0.5em;
+    }
+
+    #info .camp .card .icons {
+        gap: 1em;
+    }
 }
