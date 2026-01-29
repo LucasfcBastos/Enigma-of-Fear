@@ -7,7 +7,7 @@
 #buy .part01 {
     display: flex;
     justify-content: space-around;
-    padding: 0em 1em 1em 1em;
+    padding: 0em 1em 2em 1em;
 }
 
 #buy .part01 .card {
@@ -20,6 +20,25 @@
 #buy .part01 .card img {
     width: 16em;
     margin: 0em 2em;
+}
+
+/* part 02 for game purchase options style */
+#buy .part02 {
+    background-color: var(--ColorGrayLight);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buy .part02 .card {
+    background-color: var(--ColorGrayDark);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 0em 1em 2em 1em;
+}
+
+#buy .part02 .card img {
+    width: 27.5em;
 }
 
 /* button for buy */
@@ -63,6 +82,23 @@
     }
 
     #buy button {
-        width: 85%;
+        width: 15em;
+    }
+
+    #buy .part02 {
+        background-color: var(--ColorGrayLight);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 0em 0.5em 1.5em 0.5em;
+    }
+    
+    #buy .part02 .card {
+        background-color: var(--ColorGrayLight);
+        align-items: center;
+    }
+
+    #buy .part02 .card img {
+        width: 100%;
     }
 }
