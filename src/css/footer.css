@@ -1,0 +1,46 @@
+/* section default settings */
+.foot_camp {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* camp degrad */
+.degrad {
+    background: #292929;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 1) 0%, rgba(0, 0, 0, 1) 50%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.degrad img {
+    height: 2em;
+}
+
+/* camp footer */
+footer {
+    background-color: var(--ColorBlack);
+    align-content: end;
+    padding-bottom: 1em;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* styles responsiveness */
+@media (max-width: 650px) {
+    .degrad img {
+        height: 1.25em;
+    }
+
+    footer {
+        background-color: var(--ColorBlack);
+        align-content: end;
+        padding-bottom: 7em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
